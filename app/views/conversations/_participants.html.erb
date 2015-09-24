@@ -1,0 +1,7 @@
+<!-- partial to render avatars of a conversation’s participants (except for the current user): -->
+
+<% conversation.participants.each do |participant| %>
+  <% unless participant == current_user %>
+    <%= gravatar_for participant %>
+  <% end %>
+<% end %>

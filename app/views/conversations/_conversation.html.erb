@@ -1,0 +1,18 @@
+<li class="list-group-item clearfix">
+
+  <!-- .subject from mailboxer(check migration) -->
+  <%= link_to conversation.subject, conversation_path(conversation) %>
+  <p>
+  	<%= render 'conversations/participants', conversation: conversation %>
+  </p>
+
+  <p> <!-- display the last message of the conversation and its creation date: -->
+  	<%= conversation.last_message.body %>
+    <small>
+      (<span class="text-muted">
+          <%= conversation.last_message.created_at.strftime("%-d %B %Y, %H:%M:%S") %>
+       </span>)
+    </small>
+  </p>
+
+</li>
