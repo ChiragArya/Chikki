@@ -16,5 +16,4 @@
 //= require jquery.turbolinks
 //= require chosen-jquery
 //= require messages
-//= require ImageSelect.jquery.js
 //= require_tree .

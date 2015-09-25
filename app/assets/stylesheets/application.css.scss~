@@ -17,7 +17,6 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 @import 'chosen';
-@import 'ImageSelect';
 
 .alert-notice {
   @extend .alert-success;

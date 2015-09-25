@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     end
   end
   resources :messages, only: [:new, :create]
+  get 'messages' => "messages#create"
 
   resources :users, only: [:index]
 
